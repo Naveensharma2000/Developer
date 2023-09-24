@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.example.demo" />
+      
+    <!-- bean definitions here -->
+     <bean id = "car" class = "com.example.demo.Twowheeler" ></bean>
+ 
+    
+
+
+
+     <!-- <!-- <bean id = "sample" class = "com.example.demo.Sample" > -->
+     <property name = "lastname" value = "vijay"></property>
+     <property name = "ad" value = "23" ></property>
+     <property name = "fv"  value = "1.2f"></property>
+      -->
+     <!-- <bean id = "sample" class = "com.example.demo.Sample" > -->
+     <!-- <constructor-arg name= "lastname" value = "vijay"/> -->
+     <!-- <constructor-arg name= "ad" value = "23" /> -->
+     <!-- <property name = "welcome"> -->
+     <!-- <bean class = "com.example.demo.Welcome"></bean> -->
+     <!-- </property> -->
+          <!-- </bean> -->
+
+         <bean id = "Welcome" class = "com.example.demo.Welcome" ></bean>
+
+
+
+          <!-- <bean id = "star" class = "com.example.demo.Loosecoupling" > -->
+            <!-- <property name = "mark"> -->
+               <!-- <bean class = "com.example.demo.Mathmarks"/> -->
+            <!-- </property>           -->
+          <!-- </bean> -->
+
+          <!-- <bean id = "autow"  class ="com.example.demo.Autow" autowire ="constructor"> -->
+          <bean id = "autow"  class ="com.example.demo.Autow" autowire ="byType">
+          <!-- <bean id = "autow"  class ="com.example.demo.Autow" autowire ="byType"> -->
+          
+        
+
+          </bean>
+
+     
+
+</beans>
